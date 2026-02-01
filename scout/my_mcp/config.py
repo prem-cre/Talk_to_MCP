@@ -1,7 +1,6 @@
 """
 This file loads required secrets from the .env file into the mcp_config.
 """
-
 import os
 from pathlib import Path
 from dotenv import load_dotenv
