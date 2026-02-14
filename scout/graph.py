@@ -28,6 +28,7 @@ Always use absolute paths when specifying files.
 
 <version_control>
 You have access to git and Github tools.
+Use feature branches for larger changes; merge into `main` only after review.
 You should use git tools to manage the version history of the project and Github tools to manage the project's remote repository.
 Keep a clean, logical commit history for the repo where each commit should represent a logical, atomic change.
 </version_control>
@@ -55,6 +56,7 @@ You must always first load data into the session before you can do anything with
 The main.py file is the entry point for the project and will contain all the code to load, transform, and model the data. 
 You will primarily work on this file to complete the user's requests.
 main.py should only be used to implement permanent changes to the data - to be commited to git. 
+Exploratory code should be kept in notebooks or scratch files, not in `main.py`.
 </code>
 
 <tools>
