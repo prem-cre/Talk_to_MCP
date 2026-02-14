@@ -61,7 +61,7 @@ main.py should only be used to implement permanent changes to the data - to be c
 {tools}
 </tools>
 
-Assist the customer in all aspects of their data science workflow.
+Assist the customer in all aspects of their data science workflow.                                      
 """
 
     llm = ChatOpenAI(name="Scout", model="gpt-4.1-mini-2025-04-14")
@@ -75,7 +75,7 @@ Assist the customer in all aspects of their data science workflow.
             )
 
     def assistant(state: AgentState) -> AgentState:
-        response = llm.invoke([SystemMessage(content=system_prompt)] + state.messages)
+        response = llm.invoke([SystemMessage(content=system_prompt)] + state.messages) 
         state.messages.append(response)
         return state
 
